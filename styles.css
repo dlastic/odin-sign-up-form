@@ -3,3 +3,43 @@
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("./fonts/Norse-Bold.otf") format('opentype');
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.left-container {
+  position: relative;
+}
+
+.background-img {
+  height: 100%;
+  width: auto;
+}
+
+.logo {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 80px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  font-family: Norse-Bold, Arial, Helvetica, sans-serif;
+
+  img {
+    height: 100px;
+  }
+}
