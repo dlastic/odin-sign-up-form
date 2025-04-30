@@ -33,7 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  font-size: 80px;
+  font-size: 5rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
@@ -41,5 +41,87 @@ body {
 
   img {
     height: 100px;
+  }
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: rgb(240, 240, 240);
+}
+
+header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0px 20vw 0px 50px;
+
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+.form-container {
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px 20vw 40px 50px;
+  width: 100%;
+
+  h2 {
+    padding-bottom: 20px;
+  }
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(32, 29, 29);
+  text-transform: uppercase;
+}
+
+input {
+  font-size: 1rem;
+  display: block;
+  margin-top: 5px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+button {
+  background-color: #596D48;
+  box-shadow: 0px 2px 5px rgb(121, 121, 121);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 40px;
+  margin-left: 50px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #4d5e3e;
+  }
+}
+
+.right-container > p {
+  margin: 5px 50px;
+  font-weight: 600;
+}
+
+a {
+  color: #596D48;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
   }
 }
