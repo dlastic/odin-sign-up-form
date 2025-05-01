@@ -37,7 +37,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   font-family: Norse-Bold, Arial, Helvetica, sans-serif;
-  margin-top: 199px;
+  margin-top: 200px;
 
   img {
     height: 100px;
@@ -67,7 +67,7 @@ header {
 .form-container {
   background-color: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  padding: 30px 5vw 40px 50px;
+  padding: 30px 5vw 30px 50px;
   width: 100%;
 
   h2 {
@@ -92,6 +92,32 @@ input {
   padding: 6px 10px;
   border-radius: 5px;
   border: 1px solid rgb(200, 200, 200);
+
+  &:user-invalid {
+    border-color: red;
+  }
+
+  &:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+  }
+}
+
+#error-message {
+  visibility: hidden;
+  height: 1em;
+  color: red;
+  font-size: 0.8rem;
+}
+#error-message.visible {
+  visibility: visible;
+}
+
+label p {
+  margin-top: 5px;
+  text-transform: none;
+  font-weight: 300;
 }
 
 button {
