@@ -13,22 +13,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   height: 100vh;
-  overflow-y: hidden;
 }
 
 .left-container {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60vw;
+  min-width: 300px;
+  background-image: url(./images/background-img.jpg);
+  background-size: cover;
 }
 
-.background-img {
-  height: 100%;
-  width: auto;
-}
 
 .logo {
-  position: absolute;
   width: 100%;
-  top: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,6 +37,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   font-family: Norse-Bold, Arial, Helvetica, sans-serif;
+  margin-top: 200px;
 
   img {
     height: 100px;
